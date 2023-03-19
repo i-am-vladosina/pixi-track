@@ -1,0 +1,41 @@
+$radioSize: 22px;
+$activeBorderSize: 7px;
+$borderSize: 2px;
+
+.radio {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    .radio__input {
+      border-color: red;
+    }
+  }
+}
+
+.radio__default {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.radio__input {
+  display: block;
+  border-radius: 50%;
+  margin-right: 8px;
+  transition: border-color var(--default-transition-time) var(--default-transition-easing);
+
+  &--checked {
+    width: $radioSize - $activeBorderSize * 2;
+    height: $radioSize - $activeBorderSize * 2;
+    border: $activeBorderSize solid red;
+  }
+
+  &--not-checked {
+    width: $radioSize - $borderSize * 2;
+    height: $radioSize - $borderSize * 2;
+    border: $borderSize solid gray;
+  }
+}

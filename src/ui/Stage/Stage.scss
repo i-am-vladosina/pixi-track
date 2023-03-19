@@ -1,0 +1,6 @@
+@import "src/styles/variables.scss";
+
+.stage {
+  width: var(--app-container-width);
+  height: var(--app-container-height);
+}

@@ -1,21 +1,22 @@
 {
-  "name": "react-template",
+  "name": "pixi-track",
   "version": "0.0.1",
   "description": "",
   "scripts": {
-    "start": "webpack serve"
+    "start": "webpack serve",
+    "build": "webpack --progress"
   },
   "author": "thisboxforworkismine@gmail.com",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "7.20.12",
     "@trivago/prettier-plugin-sort-imports": "4.0.0",
+    "@types/animejs": "3.1.7",
     "@types/node": "18.11.17",
     "@types/react": "18.0.26",
     "@types/react-dom": "18.0.10",
-    "@types/react-router": "5.1.20",
-    "@types/react-router-dom": "5.3.3",
     "babel-loader": "8.3.0",
+    "copy-webpack-plugin": "11.0.0",
     "css-loader": "6.7.3",
     "eslint": "8.30.0",
     "eslint-config-prettier": "6.5.0",
@@ -42,11 +43,12 @@
     "webpack-dev-server": "4.11.1"
   },
   "dependencies": {
+    "animejs": "3.2.1",
     "classnames": "2.3.2",
+    "lodash.random": "3.2.0",
+    "pixi.js": "7.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-router": "6.6.1",
-    "react-router-dom": "6.6.1",
     "ts-node": "10.9.1",
     "ts-node-dev": "2.0.0"
   },

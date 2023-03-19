@@ -1,0 +1,36 @@
+@import "src/styles/variables.scss";
+
+.button {
+  color: white;
+
+  font-weight: 600;
+  text-align: center;
+  border-radius: 6px;
+  width: 100%;
+
+  background-image: linear-gradient(135deg, #ea5455 0%, #e36414 100%);
+
+  &--size-middle {
+    font-size: 14px;
+    line-height: 22px;
+    padding: 9px 24px;
+  }
+
+  &--size-small {
+    font-size: 16px;
+    padding: 6px 16px;
+  }
+
+  &--size-big {
+    font-size: 18px;
+    padding: 12px 32px;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+
+  &--loading {
+    opacity: 0.3;
+  }
+}

@@ -1,0 +1,49 @@
+.switch {
+  position: relative;
+
+  &:hover {
+    .switch__toggler {
+      border-color: red;
+    }
+
+    .switch__dot {
+      background-color: gray;
+    }
+  }
+
+  &__default {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  &__toggler {
+    width: 38px;
+    height: 22px;
+    border: 1px solid gray;
+    border-radius: 11px;
+    background-color: #fff;
+    transition: background var(--default-transition-time) var(--default-transition-easing),
+      border-color var(--default-transition-time) var(--default-transition-easing);
+
+    &--checked {
+      background-color: red;
+      border-color: red;
+    }
+  }
+
+  &__dot {
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    background-color: gray;
+
+    &--checked {
+      left: calc(100% - 4px);
+      background-color: #fff;
+    }
+  }
+}
